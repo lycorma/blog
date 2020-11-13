@@ -5,9 +5,7 @@
    - 浏览器进程 - 控制管理其他进程/地址栏等公共部分，文中会称为主进程；
    - GPU进程 - 控制帧(frame)的合成；
    - 网络进程 - 控制网络请求；
-   - 渲染进程（图中的Tab）- 页面渲染进程；
-
-   ![image-20201106153948225](/Users/niki/Library/Application Support/typora-user-images/image-20201106153948225.png)
+   - 渲染进程- 页面渲染进程；
 
    *note：开第二个tab的时候，前三个进程是共用的，渲染进程大部分时候是独立的，某些时候比如同站点时是共用的。*
 
@@ -31,8 +29,6 @@
    - Else，继续往下走
 
 4. 主进程修改标签上的UI为loading状态；
-
-   ![image-20201106162616685](/Users/niki/Library/Application Support/typora-user-images/image-20201106162616685.png)
 
 5. 将拼接好的url发送给**网络进程**，网络进程查找该域名有没有缓存；
 
